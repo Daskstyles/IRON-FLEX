@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Flex Gym | Transform Your Body</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                500: '#0ea5e9',
+              },
+              secondary: {
+                500: '#6366f1',
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section with Video Background -->
+    <section class="relative h-screen overflow-hidden">
+      <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-doing-squats-with-a-barbell-1954-large.mp4" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="text-center px-4 max-w-4xl mx-auto">
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">UNLEASH YOUR <span class="text-primary-500">POTENTIAL</span></h1>
+          <p class="text-xl md:text-2xl mb-10">Join the #1 fitness community where goals become reality</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#membership" class="bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg">JOIN NOW</a>
+            <a href="#trial" class="bg-secondary-500 hover:bg-secondary-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg">FREE TRIAL</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Class Schedule -->
+    <section id="schedule" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16">CLASS <span class="text-primary-500">SCHEDULE</span></h2>
+        
+        <div class="overflow-x-auto">
+          <table class="w-full text-left rounded-lg overflow-hidden">
+            <thead class="bg-gray-700">
+              <tr>
+                <th class="py-4 px-6">Time</th>
+                <th class="py-4 px-6">Monday</th>
+                <th class="py-4 px-6">Tuesday</th>
+                <th class="py-4 px-6">Wednesday</th>
+                <th class="py-4 px-6">Thursday</th>
+                <th class="py-4 px-6">Friday</th>
+                <th class="py-4 px-6">Saturday</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-700">
+              <tr class="hover:bg-gray-700 transition">
+                <td class="py-4 px-6 font-medium">6:00 AM</td>
+                <td class="py-4 px-6">HIIT</td>
+                <td class="py-4 px-6">Yoga</td>
+                <td class="py-4 px-6">Spin</td>
+                <td class="py-4 px-6">Bootcamp</td>
+                <td class="py-4 px-6">CrossFit</td>
+                <td class="py-4 px-6">Pilates</td>
+              </tr>
+              <tr class="hover:bg-gray-700 transition">
+                <td class="py-4 px-6 font-medium">8:00 AM</td>
+                <td class="py-4 px-6">Yoga</td>
+                <td class="py-4 px-6">Spin</td>
+                <td class="py-4 px-6">Bootcamp</td>
+                <td class="py-4 px-6">CrossFit</td>
+                <td class="py-4 px-6">Pilates</td>
+                <td class="py-4 px-6">HIIT</td>
+              </tr>
+              <tr class="hover:bg-gray-700 transition">
+                <td class="py-4 px-6 font-medium">12:00 PM</td>
+                <td class="py-4 px-6">Spin</td>
+                <td class="py-4 px-6">Bootcamp</td>
+                <td class="py-4 px-6">CrossFit</td>
+                <td class="py-4 px-6">Pilates</td>
+                <td class="py-4 px-6">HIIT</td>
+                <td class="py-4 px-6">Yoga</td>
+              </tr>
+              <tr class="hover:bg-gray-700 transition">
+                <td class="py-4 px-6 font-medium">5:00 PM</td>
+                <td class="py-4 px-6">CrossFit</td>
+                <td class="py-4 px-6">Pilates</td>
+                <td class="py-4 px-6">HIIT</td>
+                <td class="py-4 px-6">Yoga</td>
+                <td class="py-4 px-6">Spin</td>
+                <td class="py-4 px-6">-</td>
+              </tr>
+              <tr class="hover:bg-gray-700 transition">
+                <td class="py-4 px-6 font-medium">7:00 PM</td>
+                <td class="py-4 px-6">Pilates</td>
+                <td class="py-4 px-6">HIIT</td>
+                <td class="py-4 px-6">Yoga</td>
+                <td class="py-4 px-6">Spin</td>
+                <td class="py-4 px-6">Bootcamp</td>
+                <td class="py-4 px-6">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16">MEET OUR <span class="text-primary-500">TRAINERS</span></h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Trainer 1 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+            <img src="http://static.photos/fitness/640x360/1" alt="Trainer" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Alex Johnson</h3>
+              <p class="text-secondary-500 mb-4">Strength & Conditioning</p>
+              <p class="text-gray-400">10+ years experience. NASM certified. Specializes in powerlifting and Olympic weightlifting.</p>
+            </div>
+          </div>
+
+          <!-- Trainer 2 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+            <img src="http://static.photos/fitness/640x360/2" alt="Trainer" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Sarah Williams</h3>
+              <p class="text-secondary-500 mb-4">Yoga & Mobility</p>
+              <p class="text-gray-400">RYT 500 certified. Focuses on functional movement and injury prevention through yoga.</p>
+            </div>
+          </div>
+
+          <!-- Trainer 3 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+            <img src="http://static.photos/fitness/640x360/3" alt="Trainer" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Mike Chen</h3>
+              <p class="text-secondary-500 mb-4">HIIT & CrossFit</p>
+              <p class="text-gray-400">CrossFit Level 3 Trainer. Creates high-energy workouts that push your limits.</p>
+            </div>
+          </div>
+
+          <!-- Trainer 4 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+            <img src="http://static.photos/fitness/640x360/4" alt="Trainer" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Jamal Rodriguez</h3>
+              <p class="text-secondary-500 mb-4">Boxing & MMA</p>
+              <p class="text-gray-400">Former professional boxer. Teaches technique, footwork, and conditioning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership Pricing -->
+    <section id="membership" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16">MEMBERSHIP <span class="text-primary-500">PLANS</span></h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Basic Plan -->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg border border-gray-700 transition-transform hover:scale-105">
+            <div class="p-8 text-center">
+              <h3 class="text-2xl font-bold mb-4">BASIC</h3>
+              <p class="text-5xl font-bold mb-6">$29<span class="text-lg font-normal">/month</span></p>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i data-feather="check" class="text-primary-500 mr-2"></i>
+                  <span>Gym Access</span>
+                </li>
+                <li class="flex items-center">
+                  <i data-feather="check" class="text-primary-500 mr-2"></i>
+                  <span>1 Group Class/Week</span>
+                </li>
+                <li class="flex items-center text-gray-500">
+                  <i data-feather="x" class="mr-2"></i>
+                  <span>Personal Training</span>
+                </li>
+                <li class="flex items-center text-gray-500">
+                  <i data-feather="x" class="mr-2"></i>
+                  <span>Nutrition Plan</span>
+                </li>
+              </ul>
+              <a href="#trial" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">GET STARTED</a>
+            </div>
+          </div>
+
+          <!-- Premium Plan (Featured) -->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg border-2 border-primary-500 transform scale-105 relative">
+            <div class="absolute top-0 right-0 bg-primary-500 text-white px-4 py-1 text-sm font-bold">POPULAR</div>
+            <div class="p-8 text-center">
+              <h3 class="text-2xl font-bold mb-4">PREMIUM</h3>
+              <p class="text-5xl font-bold mb-6">$59<span class="text-lg font-normal">/month</span></p>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i data-feather="check" class="text-primary-500 mr-2"></i>
+                  <span>Unlimited Gym Access</span>
+                </li>
+                <li class="flex items-center">
+                  <i data-feather="check" class="text-primary-500 mr-2"></i>
+                  <span>Unlimited Group Classes</span>
+                </li>
+                <li class="flex items-center">
+                  <i data-feather="check" class="text-primary-500 mr-2"></i>
+                  <span>1 PT Session/Month</span>
+                </li>
+                <li class="flex items-center">
+                  <i data-feather="check" class="text-primary-500 mr-2"></i>
+                  <span>Basic Nutrition Plan</span>
+                </li>
+              </ul>
+              <a href="#trial" class="bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">GET STARTED</a>
+            </div>
+          </div>
+
+          <!-- Elite Plan -->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg border border-gray-700 transition-transform hover:scale-105">
+            <div class="p-8 text-center">
+              <h3 class="text-2xl font-bold mb-4">ELITE</h3>
+              <p class="text-5xl font-bold mb-6">$99<span class="text-lg font-normal">/month</span></p>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i data-feather="check" class="text-primary-500 mr-2"></i>
+                  <span>24/7 Gym Access</span>
+                </li>
+                <li class="flex items-center">
+                  <i data-feather="check" class="text-primary-500 mr-2"></i>
+                  <span>Unlimited Group Classes</span>
+                </li>
+                <li class="flex items-center">
+                  <i data-feather="check" class="text-primary-500 mr-2"></i>
+                  <span>4 PT Sessions/Month</span>
+                </li>
+                <li class="flex items-center">
+                  <i data-feather="check" class="text-primary-500 mr-2"></i>
+                  <span>Custom Nutrition Plan</span>
+                </li>
+              </ul>
+              <a href="#trial" class="bg-secondary-500 hover:bg-secondary-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">GET STARTED</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transformation Gallery -->
+    <section id="transformations" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16">SUCCESS <span class="text-primary-500">STORIES</span></h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Transformation 1 -->
+          <div class="relative group overflow-hidden rounded-lg">
+            <img src="http://static.photos/fitness/640x360/5" alt="Transformation" class="w-full h-96 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6">
+              <div class="text-center">
+                <h3 class="text-2xl font-bold mb-2">Mark T.</h3>
+                <p class="text-gray-300">Lost 45lbs in 6 months through our nutrition coaching and HIIT program</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transformation 2 -->
+          <div class="relative group overflow-hidden rounded-lg">
+            <img src="http://static.photos/fitness/640x360/6" alt="Transformation" class="w-full h-96 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6">
+              <div class="text-center">
+                <h3 class="text-2xl font-bold mb-2">Lisa S.</h3>
+                <p class="text-gray-300">Gained 15lbs of muscle in 1 year with our strength training program</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transformation 3 -->
+          <div class="relative group overflow-hidden rounded-lg">
+            <img src="http://static.photos/fitness/640x360/7" alt="Transformation" class="w-full h-96 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6">
+              <div class="text-center">
+                <h3 class="text-2xl font-bold mb-2">James K.</h3>
+                <p class="text-gray-300">Went from couch to marathon in 9 months with our running club</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16">OUR <span class="text-primary-500">FACILITIES</span></h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Facility 1 -->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="http://static.photos/fitness/640x360/8" alt="Weight Room" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Strength Zone</h3>
+              <p class="text-gray-400">State-of-the-art free weights, squat racks, and strength training equipment.</p>
+            </div>
+          </div>
+
+          <!-- Facility 2 -->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="http://static.photos/fitness/640x360/9" alt="Cardio Area" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Cardio Deck</h3>
+              <p class="text-gray-400">Top-tier treadmills, ellipticals, rowers, and bikes with immersive screens.</p>
+            </div>
+          </div>
+
+          <!-- Facility 3 -->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="http://static.photos/fitness/640x360/10" alt="Studio" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Group Studio</h3>
+              <p class="text-gray-400">Spacious studio with premium flooring for all group fitness classes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trial Class Signup -->
+    <section id="trial" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden">
+          <div class="md:flex">
+            <div class="md:w-1/2 bg-gradient-to-br from-primary-500 to-secondary-500 p-12 flex items-center justify-center">
+              <div class="text-center">
+                <h2 class="text-3xl font-bold mb-4">TRY US RISK-FREE</h2>
+                <p class="text-lg mb-6">Get 7 days of unlimited access to all facilities and classes</p>
+                <div class="flex justify-center">
+                  <i data-feather="award" class="w-12 h-12"></i>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-12">
+              <h3 class="text-2xl font-bold mb-6">FREE TRIAL SIGNUP</h3>
+              <form class="space-y-6">
+                <div>
+                  <label for="name" class="block mb-2">Full Name</label>
+                  <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500">
+                </div>
+                <div>
+                  <label for="email" class="block mb-2">Email</label>
+                  <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500">
+                </div>
+                <div>
+                  <label for="phone" class="block mb-2">Phone</label>
+                  <input type="tel" id="phone" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500">
+                </div>
+                <div>
+                  <label for="goal" class="block mb-2">Primary Fitness Goal</label>
+                  <select id="goal" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <option>Weight Loss</option>
+                    <option>Muscle Gain</option>
+                    <option>General Fitness</option>
+                    <option>Sports Performance</option>
+                  </select>
+                </div>
+                <button type="submit" class="w-full bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">CLAIM FREE TRIAL</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
